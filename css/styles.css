@@ -211,6 +211,12 @@ p {
     color: #360530;
 }
 
+.line {
+    width: 20%;
+    height: 3px;
+    background: var(--white);
+}
+
 /* FIXME: Global classes end */
 
 /* TODO: Header stars */
@@ -337,6 +343,21 @@ p {
 }
 
 /* FIXME: Categories end */
+
+/* TODO: Case starts */
+
+.case-section {
+    background: #5a911b;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.case-section p {
+    max-width: 90ch;
+    font-weight: 500;
+}
+
+/* FIXME: Case ends */
 
 /* TODO: Media queries start */
 
