@@ -17,9 +17,11 @@
     <header class="header">
       <div class="header__content content__container global__padding">
         <div class="flex logo__bars items__center">
-          <picture>
-            <img src="assets/logo.webp" alt="" class="logo pointer" />
-          </picture>
+          <a href="#home">
+            <picture>
+              <img src="assets/logo.webp" alt="" class="logo pointer" />
+            </picture>
+          </a>
 
           <i class="fas fa-bars header__bars pointer"></i>
 
@@ -78,7 +80,7 @@
 
     <main class="main">
       <!-- TODO: Hero starts -->
-      <section class="hero-section relative global__padding">
+      <section id="home" class="hero-section relative global__padding">
         <article class="flex column items__center three__gap">
           <h1 class="regular__h text__center">O Ouro roxo da floresta</h1>
           <p class="regular__p text__center">
@@ -518,6 +520,39 @@
 
       <!-- FIXME: Products end -->
     </main>
+
+    <footer class="back__dark__purple footer">
+      <div class="flex column six__gap footer__content global__padding">
+        <picture>
+          <img src="assets/logo.webp" alt="" class="footer__logo circle" />
+        </picture>
+
+        <article class="flex column footer__informations six__gap">
+          <article>
+            <h3 class="capitalize font__two color__white">endereço</h3>
+            <p class="font__small color__white margin__top__three">
+              Rua FC 18 Qd 24 nº 1/A Residencial Flor do Cerrado CEP 75086-004
+              Anápolis - Goiás
+            </p>
+          </article>
+          <article>
+            <h3 class="capitalize font__two color__white">contatos</h3>
+            <p class="font__small color__white margin__top__three">
+              contato@acaiefloresta.com
+            </p>
+            <p class="font__small color__white">
+              (62)99550-8383 (Telefone WhatsApp)
+            </p>
+          </article>
+        </article>
+      </div>
+
+      <article class="copy__container flex content__center">
+        <p class="color__white text__center">
+          &copy; 2022 Copyright | Açai e Floresta. Todos os direitos reservados.
+        </p>
+      </article>
+    </footer>
 
     <script src="js/index.js"></script>
   </body>
