@@ -398,6 +398,30 @@ p {
 
 /* FIXME: Case ends */
 
+/* TODO: Decoration starts */
+
+.decoration-section {
+    padding: 25rem var(--global-horizontal-padding);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.decoration-section::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("../assets/acai.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+/* FIXME: Decoration ends */
+
 /* TODO: Certifications start */
 
 .certification__image {
