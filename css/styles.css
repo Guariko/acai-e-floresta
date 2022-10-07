@@ -212,6 +212,10 @@ p {
     font-size: 2.2rem;
 }
 
+.font__three {
+    font-size: 3rem;
+}
+
 .font__six {
     font-size: 6rem;
 }
@@ -236,6 +240,10 @@ p {
 
 .back__dark__purple {
     background: var(--dark-purple);
+}
+
+.circle {
+    border-radius: 100%;
 }
 
 /* FIXME: Global classes end */
@@ -435,6 +443,19 @@ p {
 
 /* FIXME: Benefits end */
 
+/* TODO: Products start */
+
+.products-section .regular__h {
+    font-size: 5rem;
+}
+
+.product__image {
+    width: 100%;
+    max-width: 40rem;
+}
+
+/* FIXME: Products end*/
+
 /* TODO: Media queries start */
 
 @media screen and (min-width: 700px) {
@@ -549,6 +570,25 @@ p {
     }
 
     /* FIXME: Header adjustments end */
+
+    /* TODO: Products adjustments */
+
+    .products__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 112rem;
+        align-items: flex-start;
+    }
+
+    .products__container article {
+        flex: 1 1 50rem;
+    }
+
+    .products__container .product__image {
+        height: 30rem;
+    }
+
+    /* FIXME: Products adjustments end */
     
 }
 
