@@ -3,6 +3,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
 }
 
 * {
@@ -382,6 +383,39 @@ p {
 }
 
 /* FIXME: Certifications end */
+
+/* TODO: Floresta section starts */
+
+.floresta__content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("../assets/florestaBackground.webp");
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.floresta__decoration {
+    height: 15rem;
+    width: 100%;
+    background: var(--pink);
+}
+
+.floresta__content {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+}
+
+.floresta__content .regular__p {
+    max-width: 70ch;
+}
+
+/* FIXME: Floresta section ends */
 
 /* TODO: Media queries start */
 

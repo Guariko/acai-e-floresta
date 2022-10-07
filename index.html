@@ -26,16 +26,20 @@
           <nav class="desktop__nav">
             <ul class="flex one__gap items__center content__center six__gap">
               <li>
-                <a href="#" class="header__item capitalize">sobre</a>
+                <a href="#about" class="header__item capitalize">sobre</a>
               </li>
               <li>
-                <a href="#" class="header__item capitalize">nosso açai</a>
+                <a href="#ours" class="header__item capitalize">nosso açai</a>
               </li>
               <li>
-                <a href="#" class="header__item capitalize">certificações</a>
+                <a href="#certifications" class="header__item capitalize"
+                  >certificações</a
+                >
               </li>
               <li>
-                <a href="#" class="header__item capitalize">a casa do açai</a>
+                <a href="#floresta" class="header__item capitalize"
+                  >Açai e Floresta
+                </a>
               </li>
             </ul>
           </nav>
@@ -48,16 +52,20 @@
             class="flex column one__gap items__center content__center hundred__height"
           >
             <li>
-              <a href="#" class="header__item capitalize">sobre</a>
+              <a href="#about" class="header__item capitalize">sobre</a>
             </li>
             <li>
-              <a href="#" class="header__item capitalize">nosso açai</a>
+              <a href="#ours" class="header__item capitalize">nosso açai</a>
             </li>
             <li>
-              <a href="#" class="header__item capitalize">certificações</a>
+              <a href="#certifications" class="header__item capitalize"
+                >certificações</a
+              >
             </li>
             <li>
-              <a href="#" class="header__item capitalize">a casa do açai</a>
+              <a href="#floresta" class="header__item capitalize"
+                >Açai e Floresta
+              </a>
             </li>
           </ul>
         </nav>
@@ -83,7 +91,7 @@
       <!--  FIXME: Hero ends-->
 
       <!-- TODO: About starts -->
-      <section class="about-section global__padding section">
+      <section id="about" class="about-section global__padding section">
         <div>
           <article class="flex column items__center two__gap about__content">
             <h2 class="regular__h text__center purple">Sobre nós</h2>
@@ -104,7 +112,10 @@
 
       <!-- TODO: categories starts -->
 
-      <section class="global__padding categories-section back__green section">
+      <section
+        id="ours"
+        class="global__padding categories-section back__green section"
+      >
         <div class="flex column items__center six__gap">
           <article class="flex column items__center two__gap category__intro">
             <h2 class="regular__h category__purple text__center">Nosso açai</h2>
@@ -202,7 +213,7 @@
 
       <!-- TODO: Certifications start -->
 
-      <section class="section global__padding">
+      <section id="certifications" class="section global__padding">
         <div class="flex column ten__gap items__center">
           <article class="flex column items__center one__gap">
             <h2 class="regular__h purple capitalize text__center">
@@ -284,6 +295,50 @@
       </section>
 
       <!-- FIXME: Certifications end -->
+
+      <!-- TODO: Floresta section -->
+
+      <section>
+        <div class="floresta__decoration"></div>
+
+        <article
+          id="floresta"
+          class="floresta__content flex column items__center two__gap relative global__padding"
+        >
+          <h2 class="regular__h text__center">Açai e Floresta</h2>
+          <p class="regular__p text__center">
+            O Brasil é o maior produtor mundial de açaí, com 1,4 milhão de
+            toneladas (t) de frutos produzidos em 2019. A região norte do país
+            assume a liderança no ranking nacional de produção do fruto,
+            concentrando 99,7% do volume produzido.
+          </p>
+          <p class="regular__p text__center">
+            O açaizeiro (Euterpe sp.) é uma espécie de palmeira nativa de terras
+            amazônicas brasileiras, encontrado naturalmente em áreas de várzea e
+            igapó, e mais recentemente vem sendo cultivado em áreas de terra
+            firme. Existem dez espécies de açaizeiro registradas no Brasil,
+            principal produtor mundial, com três de interesse do ponto de vista
+            agroindustrial: a Euterpe oleracea, nativa dos estados do Pará e
+            Amapá, a Euterpe precatoria, nativa do estado do Amazonas e a
+            Euterpe edulis, nativa da Mata Atlântica (TAVARES et al., 2020).
+          </p>
+          <p class="regular__p text__center">
+            O fruto do tipo bacáceo de cor roxa, conhecido como “ouro roxo”, tem
+            ganhado espaço como o principal produto de interesse econômico
+            oriundo dessa palmeira (HOMMA, 2012). A produção do fruto é
+            destinada especialmente para obtenção do vinho de açaí, substância
+            base para elaboração de alimentos e bebidas. O consumo do açaí
+            ultrapassou fronteiras no Brasil e alcançou o mercado internacional
+            e alta popularidade como alimento saudável e altamente energético
+            (SEBRAE, 2015), em função de seus valores nutricionais que incluem
+            elevados teores de lipídios, carboidratos e proteínas, atribuindo ao
+            fruto grande valor calórico, além de grande capacidade antioxidante
+            (COHEN et al., 2009; CEDRIM et al., 2018).
+          </p>
+        </article>
+      </section>
+
+      <!-- FIXME: Floresta section ends -->
     </main>
 
     <script src="js/index.js"></script>
