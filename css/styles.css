@@ -154,6 +154,10 @@ p {
     gap: 5rem;
 }
 
+.ten__gap {
+    gap: 10rem;
+}
+
 .hundred__height {
     height: 100%;
 }
@@ -191,6 +195,10 @@ p {
     background: var(--green);
 }
 
+.grey {
+    color: #989898;
+}
+
 .none {
     display: none;
 }
@@ -215,6 +223,10 @@ p {
     width: 20%;
     height: 3px;
     background: var(--white);
+}
+
+.mini__bold {
+    font-weight: 500;
 }
 
 /* FIXME: Global classes end */
@@ -359,6 +371,18 @@ p {
 
 /* FIXME: Case ends */
 
+/* TODO: Certifications start */
+
+.certification__image {
+    width: 8rem;
+}
+
+.certifications p {
+    max-width: 57ch;
+}
+
+/* FIXME: Certifications end */
+
 /* TODO: Media queries start */
 
 @media screen and (min-width: 700px) {
@@ -417,6 +441,28 @@ p {
     
 }
 
+@media screen and (min-width: 768px) {
+
+    /* TODO: Certifications adjustments */
+
+    .certifications {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 4rem;
+    }
+
+    .certification__content {
+        flex: 1 1 30rem;
+    }
+
+    .certification__image {
+        width: 18rem;
+    }
+
+    /* FIXME: Certifications adjustments end */
+    
+}
+
 @media screen and (min-width: 912px) {
 
     /* TODO: Header adjustments */
@@ -436,6 +482,26 @@ p {
     }
 
     /* FIXME: Header adjustments end */
+    
+}
+
+@media screen and (min-width: 1280px) {
+
+    /* TODO: Certifications adjustments */
+
+    .certifications {
+        gap: 1rem;
+    }
+
+    .certifications p {
+        max-width: 41ch;
+    }
+
+    .certifications h3 {
+        max-width: 30ch;
+    }
+
+    /* FIXME: Certifications adjustments end */
     
 }
 
