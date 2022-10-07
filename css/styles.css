@@ -212,6 +212,10 @@ p {
     font-size: 2.2rem;
 }
 
+.font__six {
+    font-size: 6rem;
+}
+
 .font__small {
     font-size: 1.5rem;
 }
@@ -228,6 +232,10 @@ p {
 
 .mini__bold {
     font-weight: 500;
+}
+
+.back__dark__purple {
+    background: var(--dark-purple);
 }
 
 /* FIXME: Global classes end */
@@ -395,6 +403,7 @@ p {
     right: 0;
     background-image: url("../assets/florestaBackground.webp");
     background-repeat: no-repeat;
+    background-size: cover;
     z-index: -1;
 }
 
@@ -416,6 +425,15 @@ p {
 }
 
 /* FIXME: Floresta section ends */
+
+/* TODO: Benefits start */
+
+.benefits__container {
+    flex-direction: column;
+    gap: 6rem;
+}
+
+/* FIXME: Benefits end */
 
 /* TODO: Media queries start */
 
@@ -494,6 +512,21 @@ p {
     }
 
     /* FIXME: Certifications adjustments end */
+
+    /* TODO: Benefits adjustments */
+
+    .benefits__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6rem;
+        max-width: 100rem;
+    }
+
+    .benefits__container article {
+        flex: 1 1 22rem;
+    }
+
+    /* FIXME: Benefits adjustments end */
     
 }
 
