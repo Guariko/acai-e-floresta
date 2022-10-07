@@ -49,6 +49,8 @@ p {
 /* TODO: Variables start */
 
 :root {
+    --green: #83b945;
+    --green-hover: #5c8130;
     --dark-purple: #280824;
     --purple: #61005d;
     --pink: #d40d55;
@@ -102,16 +104,14 @@ p {
 }
 
 .regular__h {
-    text-transform: capitalize;
     font-size: 4rem;
-    color: var(--green);
+    color: var(--white);
 }
 
 .regular__p {
     font-size: var(--regular-font-size);
-    font-weight: 40
-    0;
-    color: #444;
+    font-weight: 400;
+    color: var(--white);
 }
 
 .button {
@@ -119,19 +119,19 @@ p {
     font-size: var(--regular-font-size);
     text-transform: capitalize;
     border: 1px solid var(--transparent);
-    padding: 1.2rem 3rem;
+    padding: 1.5rem 3.5rem;
     width: fit-content;
     border-radius: 4rem;
     text-align: center;
     white-space: nowrap;
     background: var(--green);
     color: var(--white);
-    transition: all .2s linear;
+    transition: var(--regular-transition);
     cursor: pointer;
 }
 
 .button:hover {
-    background: var(--dark-yellow);
+    background: var(--green-hover);
 }
 
 .capitalize {
@@ -144,6 +144,10 @@ p {
 
 .two__gap {
     gap: 2rem;
+}
+
+.three__gap {
+    gap: 3rem;
 }
 
 .six__gap {
@@ -163,6 +167,26 @@ p {
     max-width: 120rem;
 }
 
+.main {
+    margin-top: var(--header-height);
+}
+
+.text__center {
+    text-align: center;
+}
+
+.pink {
+    color: var(--pink);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.grey__purple {
+    color: var(--grey-purple);
+}
+
 .none {
     display: none;
 }
@@ -172,9 +196,15 @@ p {
 /* TODO: Header stars */
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     padding: 2rem 0;
     height: var(--header-height);
     background:var(--dark-purple);
+    z-index: 10;
 }
 
 .logo {
@@ -219,13 +249,80 @@ p {
     right: 2rem;
 }
 
+.section {
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+}
+
 .desktop__nav {
     display: none;
 }
 
 /* FIXME: Header ends */
 
+/* TODO: Hero section starts */
+
+.hero-section {
+    background: rgba(37, 12, 34, 0.8);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../assets/heroBackground.webp");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* FIXME: Hero section ends */
+
+/* TODO: About starts */
+
+.about__content h3 {
+    font-size: 2.2rem;
+}
+
+.about__content .regular__p {
+    max-width: 75ch;
+}
+
+/* FIXME: About ends */
+
 /* TODO: Media queries start */
+
+@media screen and (min-width: 700px) {
+
+    /* TODO: Hero section adjustments */
+ 
+    .hero-section {
+        padding-top: 8rem;
+        padding-bottom: 10rem;
+    }   
+
+    .hero-section .regular__p {
+        font-size: 2.5rem;
+    }
+
+    /* FIXME: Hero section adjustments end */
+
+    /* TODO: Global classes adjustments */
+
+    .regular__h {
+        font-size: 6rem;
+    }
+    
+    /* FIXME: Global classes adjustments end */
+    
+}
 
 @media screen and (min-width: 912px) {
 
